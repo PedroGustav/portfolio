@@ -29,7 +29,8 @@ export const GlobalStyle = createGlobalStyle`
 
 html{
     font-family: var(--font-family);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold); 
+    scroll-behavior: smooth;
 }
 
 
@@ -70,7 +71,6 @@ html{
 }
 
 body{   
-    padding: 0 6rem;
     background-color: var(--dark-grey);
     color: var(--white);
     position: relative;
