@@ -19,7 +19,7 @@ export function MainPage(){
                     Olá, eu sou o Pedro    
                 </span>
                 <h1>
-                    <TextOrange>React</TextOrange><br />
+                    <TextOrange>FUll-Stack</TextOrange><br />
                     Developer
                 </h1>
                 <span className="presentation">
@@ -65,7 +65,7 @@ export function MainPage(){
                                 conceitos de forma prática.
                             </p>
 
-                            <a href="#" target="_blank" className="repo-link">Link do repositório</a>
+                            <a href="https://github.com/PedroGustav/Oppine-Initial-Idea" target="_blank" className="repo-link">Link do repositório</a>
                         </div> 
                     </Project>
                     <Project>
@@ -104,7 +104,7 @@ export function MainPage(){
                                 Cifra, fazendo com que ela possa ser útil para outras pessoas.
                             </p>
 
-                            <a href="#" target="_blank" className="repo-link">Link do repositório</a>
+                            <a href="https://github.com/PedroGustav/gerador-cifras" target="_blank" className="repo-link">Link do repositório</a>
                         </div> 
                     </Project>
                 </div>

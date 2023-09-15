@@ -31,7 +31,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth !important;
-    padding: 0 6rem;
+    padding: 0 4rem;
 `;
 
 export const TextOrange = styled.b`
@@ -54,7 +54,6 @@ export const Presentation = styled.section`
         text-transform: uppercase;
         font-size: var(--fz-2);
         animation: ${fadeIn} 1.5s ease-in-out 0s;
-        width: 400px;
     }
 
     h1{
@@ -74,7 +73,8 @@ export const Presentation = styled.section`
         font-size: var(--fz-1);
         justify-self: flex-end;
         animation: ${fadeIn} 2.5s ease-in-out 0s;
-        width: 650px;
+        width: 90%;
+        max-width: 650px;
     }
 
     background-image: url(${ReactLogo});
@@ -82,17 +82,19 @@ export const Presentation = styled.section`
     background-position: bottom right;  
 
     @media(max-width: 480px){
-        background-size: 80%;
+        background-size: 100%;
+        background-position-y: 400px;
     }
     @media (min-width: 481px) and (max-width: 767px){
         background-size: 80%;
     }
     .networks{
-        position: absolute;
+        /* position: absolute; */
         display: flex;
         column-gap: 60px;
-        left: 28rem;
-        top: 210px;
+        /* left: 50rem; */
+        /* top: 210px; */
+        margin-top: 1.5rem;
         animation: ${fade} 3s;
         
 
@@ -106,20 +108,36 @@ export const Presentation = styled.section`
 
     @media(max-width: 480px){
         .networks{
-            position: unset;
+            /* position: unset; */
             margin-top: 2rem;
+            .network{
+                width: 25px;
+                height: 25px;
+                img{
+                    width: 100%;
+                }
+                
+            }
         }
     }
     @media (min-width: 481px) and (max-width: 767px){
         .networks{
             position: unset;
-            margin-top: 2rem;
+            /* margin-top: 2rem; */
+            .network{
+                width: 30px;
+                height: 30px;
+                img{
+                    width: 100%;
+                }
+                
+            }
         }
     }
     @media (min-width: 768px) and (max-width: 991px){
         .networks{
-            top: 175px;
-            left: 27rem;
+            /* top: 175px; */
+            /* left: 27rem; */
             .network{
                 width: 35px;
                 height: 35px;
@@ -131,8 +149,8 @@ export const Presentation = styled.section`
     }
     @media (min-width: 992px) and (max-width: 1199px){
         .networks{
-            top: 180px;
-            left: 27rem;
+            /* top: 180px; */
+            /* left: 27rem; */
             .network{
                 width: 40px;
                 height: 40px;
@@ -159,11 +177,13 @@ export const Projects = styled.section`
         strong{
             text-transform: uppercase;
             font-size: var(--fz-2);
+            text-align: center;
         }
         h1{
             text-transform: uppercase;
             font-size: var(--fz-3);
-            line-height: 80px;
+            line-height: var(--fz-3);
+            text-align: center;
         }
         span{
                 font-size: var(--fz-1);
@@ -188,6 +208,7 @@ export const Project = styled.article`
     align-items:center;
     padding: 1rem;
     height: 450px;
+    width: auto;
     overflow-y: hidden;
     transition: all 1s;
 
@@ -208,7 +229,8 @@ export const Project = styled.article`
 
     img{
         transition: all 1s;
-        /* width: 320px; */
+        width: 90%;
+        max-width: 320px;
         height: 200px;
         margin-bottom: 2rem;
     }
@@ -241,7 +263,7 @@ export const Project = styled.article`
         /* justify-content: space-around; */
         height: 450px;
         /* min-height: 421px; */
-        max-width: 480px;
+        max-width: 440px;
         transition: all 1s;
         opacity: 0;
         padding: 1rem;
@@ -309,12 +331,70 @@ export const Contact = styled.section`
         display: flex;
         column-gap: 64px;
 
-        .contact{
-            transition: all 1s;
-
-            &:hover{
-                transform: translateY(-20%);
+        @media(max-width: 480px){
+            .contact{
+               width: 25px;
+               img{
+                width: 100%;
+               }
             }
         }
+            @media (min-width: 481px) and (max-width: 767px){
+                .contact{
+                    width: 30px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            @media (min-width: 768px) and (max-width: 991px){
+                .contact{
+                    width: 35px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            @media (min-width: 992px) and (max-width: 1199px){
+                .contact{
+                    width: 40px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            @media (min-width: 1200px) and (max-width: 1919px){
+                .contact{
+                    width: 45px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media (min-width: 1200px) and (max-width: 1919px){
+                .contact{
+                    width: 50px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            @media(min-width: 1920px){
+                .contact{
+                    width: 55px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .contact{
+                transition: all 1s;
+
+                &:hover{
+                    transform: translateY(-20%);
+                }
+
+            }
     }
 `;
